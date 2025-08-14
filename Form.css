@@ -1,0 +1,68 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form{
+  background-color: #8a2be2; /*  the background color of the form*/
+  width: fit-content; /*  makes the form to fit to size, not covering the entire space*/
+  margin: auto; /*  space between left and right margin*/
+  margin-top: 70px; /* margin top of the form*/
+  border-radius: 20px; /*  changes the edges of the form to curve*/
+  padding: 45px;/*  space inside the form*/
+  display: flex; /*  this gives a space in between each input in the form*/
+  flex-direction: column; /*this will change the direction of the flex vertically*/
+}
+
+
+input{
+  padding: 15px; /*  space inside an element*/
+  border-radius: 25px; /*  this curve the edges of the button*/
+   border: none;/*this removed the border line  */
+   outline: none; /* this remove the border line when it is active */
+   text-transform: capitalize; /*this code capitalize only the first letter in the input*/
+}
+
+input:hover{
+  transition: 0.5s; /*  number of times */
+  transform: scale(1.1);/* this Project the input out when hover*/
+    color:black;
+}
+
+.we{
+  text-transform: lowercase;
+}
+
+button{ 
+  margin-top: 15px; /* the space up the button */
+  padding: 15px;  /* space inside an element */
+  /* this reduce the width of the button */
+   border: none;
+  outline: none; 
+  cursor: pointer;  /* this change the cursor to pointer  */
+  border-radius: 25px;  /*  this curve the edges of the button*/
+  margin-right: 4px;  /* this send the button to the left */
+}
+
+.bu:hover{
+  transition: 0.5s;
+  transform: scale(1.1); /* this project the button out when hover*/
+  background-color: green;
+  color: white;
+}
+
+.bus:hover{
+  transition: 0.5s;
+  transform: scale(1.1); /* this project the button out when hover*/
+  background-color: red;
+  color: white;
+}
+/* @media querie */
+@media (max-width:1200px){
+  form{
+    width: 100%;
+  }
+  }
+
